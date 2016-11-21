@@ -116,7 +116,7 @@ cd ..
 
 echo -e "\n\n\n\nCreazione delle mappe .obf...\n\n\n\n\n"
 
-cd OsmAndMapCreator-main
+cd OsmAndMapCreator
 java -Djava.util.logging.config.file=logging.properties -Xms${MINIMO}M -Xmx${MASSIMO}M -cp "./OsmAndMapCreator.jar:lib/OsmAnd-core.jar:./lib/*.jar" net.osmand.data.index.IndexBatchCreator ../batch-normale.xml
 
 # Usa le mappe .obf create per creare un unico file di indirizzi

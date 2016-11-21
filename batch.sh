@@ -44,7 +44,7 @@ run(){
     mv 6*.osm.pbf osmand-pbf
 
     echo "Creating OBF maps"
-    cd OsmAndMapCreator-main
+    cd OsmAndMapCreator
     java -Djava.util.logging.config.file=logging.properties -Xms${XMS} -Xmx${XMX} -cp "./OsmAndMapCreator.jar:lib/OsmAnd-core.jar:./lib/*.jar" net.osmand.data.index.IndexBatchCreator ../batch-normale.xml
 
     echo "Maps union"
